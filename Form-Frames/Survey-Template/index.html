@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta email="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JunkHazard Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 id="title">JunkHazard Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form" method="post">
+        <fieldset>
+            <label id="name-label" for="name">Name: <input id="name" type="text" placeholder="Enter your name"
+                    required></label>
+            <label id="email-label" for="email">Email: <input id="email" type="email" placeholder="Enter your email"
+                    required></label>
+            <label id="number-label" for="age">Age (optional) <input id="number" type="number" min="13" max="120"
+                    placeholder="Enter your age"></label>
+        </fieldset>
+        <fieldset>
+            <label for="improvement">What would you like to see improved? (Check all that
+                apply)
+                <label><input class="inline" type="checkbox" value="front-end" name="improvement"> Front-end Projects</label>
+                <label><input class="inline" type="checkbox" value="back-end" name="improvement"> Back-end Projects</label>
+                <label><input class="inline" type="checkbox" value="data-visuals" name="improvement"> Data Visualization</label>
+                <label><input class="inline" type="checkbox" value="challenges" name="improvement"> Challenges</label>
+                <label><input class="inline" type="checkbox" value="open-source" name="improvement"> Open source community</label>
+                <label><input class="inline" type="checkbox" value="github-help" name="improvement"> Github help rooms</label>
+            </label>
+            <label for="feature">What is the favorite feature of our company?
+                <select id="dropdown" name="features">
+                    <option value="">Select an option</option>
+                    <option value="1">Challenges</option>
+                    <option value="2">Tutorials</option>
+                    <option value="3">Community</option>
+                    <option value="4">Open Source</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <label class="topics" for="recommendation">Would you recommend our company to a friend ?
+                <label><input class="inline" type="radio" name="recommendation" value="definitely"><span
+                        class="checkmark"></span>Yes! I
+                    would.</label>
+                <label><input class="inline" type="radio" name="recommendation" value="not sure"><span
+                        class="checkmark"></span>Not Sure!</label>
+                <label><input class="inline" type="radio" name="recommendation" value="Maybe"><span
+                        class="checkmark"></span>Maybe!</label>
+            </label>
+            <label for="comments">Any comments or suggestions?
+                <textarea id="comments" placeholder="Enter your comments here..." cols="30" rows="4"></textarea>
+            </label>
+        </fieldset>
+        <!-- Button -->
+        <input type="submit" id="submit" value="Submit">
+    </form>
+</body>
+
+</html>
